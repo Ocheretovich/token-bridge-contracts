@@ -717,7 +717,7 @@ async function _registerNetworks(
 
   // register - needed for retryables
   addCustomNetwork({
-    customL1Network: l1Network,
+    ...(l1Network.chainID === 8453 || l1Network.chainID === 84532 ? { customL1Network: l1Network } : {}),
     customL2Network: l2Network,
   })
 
