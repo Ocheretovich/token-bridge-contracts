@@ -133,6 +133,14 @@ async function main() {
 
   await _addMinterRoleToL2Gateway(l2UsdcGateway, deployerL2, masterMinter)
   console.log('Minter role with max allowance added to L2 gateway')
+  fs.writeFileSync('/config/usdc.json', JSON.stringify({
+    proxyAdminL1: proxyAdminL1.address,
+    proxyAdminL2: proxyAdminL2.address,
+    l2Usdc: l2Usdc.address,
+    masterMinter: masterMinter.address,
+    l1UsdcGateway: l1UsdcGateway.address,
+    l2UsdcGateway: l2UsdcGateway.address,
+  }))
 }
 
 async function _loadWallets(): Promise<{
