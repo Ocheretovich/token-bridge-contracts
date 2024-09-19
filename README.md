@@ -21,4 +21,4 @@ Check [this doc](./docs/deployment.md) for instructions on deployment and verifi
 
 Discord - [Arbitrum](https://discord.com/invite/5KE54JwyTs)
 
-X (Twitter): [Arbitrum](https://x.com/arbitrum)
+X (formerly Twitter): [Arbitrum](https://x.com/arbitrum)
